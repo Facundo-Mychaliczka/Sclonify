@@ -3,6 +3,7 @@ import ProfileImage from "../../../../../public/FotoCV.jpeg";
 
 export const RightSideWrapper = styled.div`
 	height: 100%;
+	margin-top: 5px;
 `;
 
 export const RightSideNavbar = styled.nav`
@@ -10,11 +11,12 @@ export const RightSideNavbar = styled.nav`
 	flex-direction: row;
 	position: fixed;
 	background-color: transparent;
+	border-top-left-radius: 10px;
 	justify-content: space-between;
-	padding: 0px 20px;
-	top: 0px;
+	padding: 5px 20px;
+	top: 10px;
 	width: 65%;
-	height: 50px;
+	height: 60px;
 `;
 
 export const ArrowsContainer = styled.div`

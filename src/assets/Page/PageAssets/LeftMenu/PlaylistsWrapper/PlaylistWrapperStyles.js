@@ -4,6 +4,8 @@ import ItemImage from "../../../../../../public/ImgProyectoPrueba.jpeg";
 
 export const PlaylistsContainer = styled.div`
 	display: flex;
+	background-color: transparent;
+	opacity: 1;
 	flex-direction: column;
 	height: 80%;
 	gap: 10px;
@@ -42,6 +44,7 @@ export const PlaylistsIcon = styled(StyledImageIcon)`
 
 export const PlaylistItem = styled.div`
 	cursor: pointer;
+	border-radius: 5px;
 	color: #bebfc5;
 	width: 100%;
 	background-color: ${({ active }) => (active ? "gray" : "transparent")};

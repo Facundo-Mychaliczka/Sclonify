@@ -10,8 +10,6 @@ import {
 	StyledImageProfile,
 } from "./RightPageStyles";
 
-import ImageProfile from "../../../../../public/FotoCV.jpeg";
-
 const RightPage = () => {
 	return (
 		<RightSideWrapper>

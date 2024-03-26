@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const IconsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 25px;
 `;
 
 export const Icon = styled.a`
 	background-color: transparent;
 	display: flex;
-	gap: 10%;
+	gap: 30px;
 	width: 100%;
 	cursor: pointer;
 	color: #bebfc5;
@@ -25,7 +25,8 @@ export const StyledImageIcon = styled.svg`
 `;
 
 export const StyledImageLibrary = styled.svg`
-	fill: currentColor;
+	fill: ${({ menuWidth }) => (menuWidth === "small" ? "none" : "currentColor")};
+	min-width: 48px;
 	stroke: #bebfc5;
 	transform: rotate(90deg);
 `;
@@ -36,7 +37,7 @@ export const LibraryIconsContainer = styled.div`
 	display: flex;
 	flex-direction: row;
 	height: 30px;
-	margin-top: 15px;
+	margin-top: 5px;
 	width: 100%;
 	justify-content: space-between;
 `;
@@ -45,7 +46,7 @@ export const IconLibrary = styled.div`
 	display: flex;
 	flex-direction: row;
 	background-color: transparent;
-	gap: 11%;
+	gap: 30px;
 	width: 90%;
 	cursor: pointer;
 	color: #bebfc5;
@@ -66,7 +67,7 @@ export const LibraryIconP = styled.p`
 	}
 `;
 export const LibraryRightIcons = styled.div`
-	display: flex;
+	display: ${({ menuWidth }) => (menuWidth === "small" ? "none" : "flex")};
 	flex-direction: row;
 	height: 100%;
 	gap: 10px;
@@ -74,11 +75,17 @@ export const LibraryRightIcons = styled.div`
 
 export const StyledImageLibraryIcon = styled(StyledImageIcon)`
 	color: #bebfc5;
+	border-radius: 2rem;
 	transition: 0.25s;
 	cursor: pointer;
 	&:hover {
 		fill: white;
+		background-color: gray;
 	}
+`;
+
+export const StyledImageLibraryIconLarge = styled(StyledImageLibraryIcon)`
+	transform: rotate(-180deg);
 `;
 
 export const CarrouselFilter = styled.div`
