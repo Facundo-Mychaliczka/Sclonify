@@ -5,8 +5,8 @@ import ItemImage from "../../../../../../public/ImgProyectoPrueba.jpeg";
 export const PlaylistsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
+	height: 80%;
 	gap: 10px;
-	height: 60%;
 	overflow-y: scroll;
 `;
 

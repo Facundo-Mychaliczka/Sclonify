@@ -4,7 +4,6 @@ export const IconsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	height: 40%;
 `;
 
 export const Icon = styled.a`

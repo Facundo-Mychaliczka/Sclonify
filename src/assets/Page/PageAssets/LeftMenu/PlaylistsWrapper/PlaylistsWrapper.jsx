@@ -67,6 +67,34 @@ const PlaylistsWrapper = () => {
 					<PlaylistItemDescription>Artista</PlaylistItemDescription>
 				</PlaylistItemDescriptionContainer>
 			</PlaylistItem>
+			<PlaylistItem>
+				<PlaylistItemImageContainer></PlaylistItemImageContainer>
+				<PlaylistItemDescriptionContainer>
+					<PlaylistItemName>IMAGINE DRAGONS</PlaylistItemName>
+					<PlaylistItemDescription>Artista</PlaylistItemDescription>
+				</PlaylistItemDescriptionContainer>
+			</PlaylistItem>
+			<PlaylistItem>
+				<PlaylistItemImageContainer></PlaylistItemImageContainer>
+				<PlaylistItemDescriptionContainer>
+					<PlaylistItemName>IMAGINE DRAGONS</PlaylistItemName>
+					<PlaylistItemDescription>Artista</PlaylistItemDescription>
+				</PlaylistItemDescriptionContainer>
+			</PlaylistItem>
+			<PlaylistItem>
+				<PlaylistItemImageContainer></PlaylistItemImageContainer>
+				<PlaylistItemDescriptionContainer>
+					<PlaylistItemName>IMAGINE DRAGONS</PlaylistItemName>
+					<PlaylistItemDescription>Artista</PlaylistItemDescription>
+				</PlaylistItemDescriptionContainer>
+			</PlaylistItem>
+			<PlaylistItem>
+				<PlaylistItemImageContainer></PlaylistItemImageContainer>
+				<PlaylistItemDescriptionContainer>
+					<PlaylistItemName>IMAGINE DRAGONS</PlaylistItemName>
+					<PlaylistItemDescription>Artista</PlaylistItemDescription>
+				</PlaylistItemDescriptionContainer>
+			</PlaylistItem>
 		</PlaylistsContainer>
 	);
 };
