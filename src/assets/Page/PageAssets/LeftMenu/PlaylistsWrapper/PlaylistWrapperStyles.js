@@ -22,6 +22,7 @@ export const PlaylistsIconsContainer = styled.div`
 export const PlaylistRecentBtn = styled.div`
 	cursor: pointer;
 	display: flex;
+	color: #bebfc5;
 	transition: 0.25s;
 	&:hover {
 		color: white;
@@ -29,13 +30,19 @@ export const PlaylistRecentBtn = styled.div`
 `;
 
 export const PlaylistsIcon = styled(StyledImageIcon)`
+	color: #bebfc5;
 	background-color: transparent;
 	cursor: pointer;
 	width: 30px;
+	transition: 0.25s;
+	&:hover {
+		color: white;
+	}
 `;
 
 export const PlaylistItem = styled.div`
 	cursor: pointer;
+	color: #bebfc5;
 	width: 100%;
 	background-color: ${({ active }) => (active ? "gray" : "transparent")};
 	height: 70px;
@@ -45,6 +52,7 @@ export const PlaylistItem = styled.div`
 	transition: 0.5s;
 	&:hover {
 		background-color: gray;
+		color: white;
 	}
 `;
 

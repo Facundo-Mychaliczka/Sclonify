@@ -20,12 +20,14 @@ export const Icon = styled.a`
 	}
 `;
 
-export const StyledImageIcon = styled.img`
-	filter: invert(98%) sepia(1%) saturate(3042%) hue-rotate(187deg) brightness(85%) contrast(78%);
-	max-height: 100%;
-	&:hover {
-		filter: invert(100%) sepia(71%) saturate(290%) hue-rotate(10deg) brightness(109%) contrast(107%);
-	}
+export const StyledImageIcon = styled.svg`
+	fill: currentColor;
+`;
+
+export const StyledImageLibrary = styled.svg`
+	fill: currentColor;
+	stroke: #bebfc5;
+	transform: rotate(90deg);
 `;
 
 export const IconText = styled.p``;
@@ -71,13 +73,17 @@ export const LibraryRightIcons = styled.div`
 `;
 
 export const StyledImageLibraryIcon = styled(StyledImageIcon)`
+	color: #bebfc5;
 	transition: 0.25s;
 	cursor: pointer;
-	height: ${({ plus }) => (plus ? "15px" : "20px")};
+	&:hover {
+		fill: white;
+	}
 `;
 
 export const CarrouselFilter = styled.div`
 	display: flex;
+	color: #bebfc5;
 	gap: 10px;
 	width: 100%;
 	margin: 10px;

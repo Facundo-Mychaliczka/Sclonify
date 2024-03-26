@@ -7,9 +7,10 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         list-style-type: none;
         text-decoration: none;
-        color: #bebfc5;
         align-items: center;
         text-align: center;
+        /* COLOR DE TEXTO  */
+        /* color: #bebfc5; */
     }
     html {
         scroll-behavior: smooth;
