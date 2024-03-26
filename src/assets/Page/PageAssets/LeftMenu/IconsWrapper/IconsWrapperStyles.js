@@ -89,11 +89,16 @@ export const StyledImageLibraryIconLarge = styled(StyledImageLibraryIcon)`
 `;
 
 export const CarrouselFilter = styled.div`
-	display: flex;
+	/* display: flex; */
+	display: ${({ menuWidth }) => (menuWidth === "small" ? "none" : "flex")};
+	flex-direction: row;
 	color: #bebfc5;
+	align-items: center;
+	justify-content: ${({ menuWidth }) => (menuWidth === "large" ? "left" : "")};
 	gap: 10px;
 	width: 100%;
 	margin: 10px;
+	transition: 0.5s;
 	overflow-x: hidden;
 	overflow-y: hidden;
 `;

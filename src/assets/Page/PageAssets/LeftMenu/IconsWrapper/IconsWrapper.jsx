@@ -89,7 +89,7 @@ const IconsWrapper = () => {
 					{/* --------------------------- */}
 				</LibraryRightIcons>
 			</LibraryIconsContainer>
-			<CarrouselFilter>
+			<CarrouselFilter menuWidth={widthLeftMenu}>
 				<CarrouselItem>Listas</CarrouselItem>
 				<CarrouselItem>Artistas</CarrouselItem>
 				<CarrouselItem>Álbumes</CarrouselItem>

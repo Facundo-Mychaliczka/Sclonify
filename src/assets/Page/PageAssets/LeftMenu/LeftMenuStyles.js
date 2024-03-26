@@ -12,10 +12,9 @@ const displayFunction = (widthDisplay) => {
 
 export const LeftMenuContainer = styled.div`
 	color: whitesmoke;
+	transition: 0.5s;
 	background-color: black;
-	/* width: 35%; */
 	width: ${({ widthDisplay }) => displayFunction(widthDisplay)};
-	/* QUE EL WITH AL EXPANDIR SEA DEL 50% */
 	height: 100%;
 	padding: 15px 20px;
 `;
