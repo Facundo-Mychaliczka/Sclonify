@@ -14,13 +14,19 @@ export const RecentPlayedWrapper = styled.div`
 `;
 
 export const RecentPlayedCard = styled.div`
+	cursor: pointer;
 	display: flex;
-	/* width: 150px; */
 	width: 100%;
 	background-color: rgba(190, 191, 197, 0.3);
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	transition: 0.25s;
+	border-radius: 10px;
+	&:hover {
+		background-color: grey;
+		scale: 1.05;
+	}
 `;
 
 export const RecentPlayedImage = styled.div`
@@ -30,6 +36,8 @@ export const RecentPlayedImage = styled.div`
 	background-position: center;
 	height: 60px;
 	width: 70px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 	overflow-x: hidden;
 	overflow-y: hidden;
 `;
@@ -44,5 +52,32 @@ export const ButtonContainer = styled.div`
 `;
 
 export const PlayingSongGIF = styled.img`
-	width: 50%;
+	width: 30px;
+`;
+
+export const MultimediaPauseRecentButton = styled.img`
+	width: 40px;
+	position: absolute;
+	background-color: green;
+	border-radius: 10rem;
+	opacity: 0;
+	transition: 0.25s;
+	transform: translate(-35px, 10%);
+	&:hover {
+		opacity: 1;
+		transform: translate(-35px, -10%);
+	}
+`;
+
+export const MultimediaPlayRecentButton = styled.img`
+	width: 40px;
+	background-color: green;
+	border-radius: 10rem;
+	opacity: 0;
+	transition: 0.25s;
+	transform: translateY(10%);
+	&:hover {
+		opacity: 1;
+		transform: translateY(0);
+	}
 `;
