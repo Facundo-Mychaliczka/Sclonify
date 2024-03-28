@@ -11,6 +11,13 @@ export const PlaylistsContainer = styled.div`
 	height: 80%;
 	gap: 10px;
 	overflow-y: scroll;
+	&::-webkit-scrollbar {
+		background: transparent;
+		width: 10px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: rgba(190, 191, 197, 0.3);
+	}
 `;
 
 export const PlaylistsIconsContainer = styled.div`
