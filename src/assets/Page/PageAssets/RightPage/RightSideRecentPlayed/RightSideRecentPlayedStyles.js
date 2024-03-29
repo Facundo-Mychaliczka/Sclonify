@@ -24,7 +24,7 @@ export const RecentPlayedCard = styled.div`
 	transition: 0.25s;
 	border-radius: 10px;
 	&:hover {
-		background-color: grey;
+		background-color: rgba(190, 191, 197, 0.5);
 		scale: 1.05;
 	}
 `;

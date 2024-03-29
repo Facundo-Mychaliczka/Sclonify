@@ -10,7 +10,7 @@ export const MusicPlaybackWrapper = styled.div`
 	z-index: 10;
 	position: fixed;
 	bottom: 0;
-	height: 50px;
+	height: 80px;
 	color: white;
-	padding: 0px 20px;
+	padding: 10px 25px;
 `;

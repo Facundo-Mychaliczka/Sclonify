@@ -9,9 +9,12 @@ export const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         align-items: center;
         text-align: center;
-        /* COLOR DE TEXTO  */
-        /* color: #bebfc5; */
+        
     }
+    :root {
+            --textColorGray: #bebfc5;
+            --bgColorOpacity: rgba(190, 191, 197, 0.3);
+        }
     html {
         scroll-behavior: smooth;
     }

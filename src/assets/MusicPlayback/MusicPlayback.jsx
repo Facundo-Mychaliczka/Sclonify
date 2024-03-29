@@ -1,11 +1,13 @@
 import React from "react";
 import { MusicPlaybackWrapper } from "./MusicPlaybackStyles";
+import CurrentSongInfo from "./CurrentSongInfo/CurrentSongInfo";
+import MultimediaButtons from "./MultimediaButtons/MultimediaButtons";
 
 const MusicPlayback = () => {
 	return (
 		<MusicPlaybackWrapper>
-			<p>Info de canción reproduciendo</p>
-			<p>Botones de música</p>
+			<CurrentSongInfo />
+			<MultimediaButtons />
 			<p>Info de reproducción</p>
 		</MusicPlaybackWrapper>
 	);

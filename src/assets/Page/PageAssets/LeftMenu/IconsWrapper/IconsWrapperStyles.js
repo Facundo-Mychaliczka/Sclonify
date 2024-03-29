@@ -107,12 +107,13 @@ export const CarrouselItem = styled.p`
 	cursor: pointer;
 	text-align: center;
 	white-space: nowrap;
-	background-color: grey;
+	background-color: rgba(190, 191, 197, 0.3);
 	padding: 5px 10px;
 	border-radius: 1rem;
 	transition: 0.25s;
 	width: auto;
 	&:hover {
 		color: white;
+		background-color: grey;
 	}
 `;

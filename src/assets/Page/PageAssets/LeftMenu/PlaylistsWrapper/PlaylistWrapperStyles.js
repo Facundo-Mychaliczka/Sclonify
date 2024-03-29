@@ -56,7 +56,7 @@ export const PlaylistItem = styled.div`
 	border-radius: 5px;
 	color: #bebfc5;
 	width: 100%;
-	background-color: ${({ active }) => (active ? "gray" : "transparent")};
+	background-color: ${({ active }) => (active === "true" ? "rgba(190, 191, 197, 0.3)" : "transparent")};
 	height: 70px;
 	display: flex;
 	flex-direction: row;
@@ -65,7 +65,7 @@ export const PlaylistItem = styled.div`
 	justify-content: ${({ menuWidth }) => (menuWidth === "small" ? "center" : "left")};
 	transition: 0.5s;
 	&:hover {
-		background-color: gray;
+		background-color: rgba(190, 191, 197, 0.3);
 		color: white;
 	}
 `;

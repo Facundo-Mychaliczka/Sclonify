@@ -35,7 +35,7 @@ const PlaylistsWrapper = () => {
 				""
 			)}
 
-			<PlaylistItem menuWidth={leftMenuWidth}>
+			<PlaylistItem active={"true"} menuWidth={leftMenuWidth}>
 				{leftMenuWidth !== "small" ? (
 					<>
 						<PlaylistItemImageContainer></PlaylistItemImageContainer>
