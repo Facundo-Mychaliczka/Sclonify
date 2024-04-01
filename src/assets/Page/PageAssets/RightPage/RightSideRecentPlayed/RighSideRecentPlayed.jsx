@@ -16,7 +16,7 @@ import PauseBtnImage from "../../../../../../public/PauseButton.png";
 
 const RighSideRecentPlayed = () => {
 	const leftSideWidth = useSelector((state) => state.leftMenu.leftMenu);
-	const PlayingSong = "est";
+	const PlayingSong = "esta";
 	return (
 		<RecentPlayedWrapper leftMenuWidth={leftSideWidth}>
 			<RecentPlayedCard>
