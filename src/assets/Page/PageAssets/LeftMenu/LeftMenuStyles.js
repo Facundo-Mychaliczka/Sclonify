@@ -4,7 +4,7 @@ const displayFunction = (widthDisplay) => {
 	if (widthDisplay === "small") {
 		return "10%";
 	} else if (widthDisplay === "medium") {
-		return "35%";
+		return "25%";
 	} else {
 		return "50%";
 	}

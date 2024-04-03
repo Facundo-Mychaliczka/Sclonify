@@ -8,7 +8,7 @@ export const PlaylistsContainer = styled.div`
 	opacity: 1;
 	flex-direction: column;
 	margin-top: ${({ menuWidth }) => (menuWidth !== "small" ? "0px" : "20px")};
-	height: 80%;
+	height: calc(80% - 110px);
 	gap: 10px;
 	overflow-y: scroll;
 	&::-webkit-scrollbar {
@@ -57,12 +57,12 @@ export const PlaylistItem = styled.div`
 	color: #bebfc5;
 	width: 100%;
 	background-color: ${({ active }) => (active === "true" ? "rgba(190, 191, 197, 0.3)" : "transparent")};
-	height: 70px;
+	height: 80px;
 	display: flex;
 	flex-direction: row;
 	/* padding: 0px 10px; */
-	padding: ${({ menuWidth }) => (menuWidth === "small" ? "0px 0px" : "0px 10px")};
-	justify-content: ${({ menuWidth }) => (menuWidth === "small" ? "center" : "left")};
+	padding: ${({ menuWidth }) => (menuWidth === "small" ? "0px 0px" : "10px 10px")};
+	justify-content: ${({ menuWidth }) => (menuWidth === "small" ? "center" : "space-between")};
 	transition: 0.5s;
 	&:hover {
 		background-color: rgba(190, 191, 197, 0.3);
@@ -75,15 +75,16 @@ export const PlaylistItemImageContainer = styled.div`
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 90%;
-	width: 65px;
+	height: 60px;
+	width: 60px;
 	border-radius: 20rem;
 	overflow-x: hidden;
 	overflow-y: hidden;
 `;
 
 export const PlaylistItemImage = styled.img`
-	height: 50px;
+	height: 60px;
+	width: 60px;
 	border-radius: 4rem;
 `;
 
@@ -92,14 +93,16 @@ export const PlaylistItemDescriptionContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 60%;
-	padding: 5%;
+	width: 75%;
+	padding: 10px;
 	gap: 5px;
 `;
 
 export const PlaylistItemName = styled.p`
 	text-align: left;
 	width: 100%;
+	font-size: 20px;
+	font-weight: 800;
 `;
 
 export const PlaylistItemDescription = styled.p`

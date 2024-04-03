@@ -5,7 +5,7 @@ const widthRightSide = (righSideWidth) => {
 	if (righSideWidth === "small") {
 		return "90%";
 	} else if (righSideWidth === "medium") {
-		return "65%";
+		return "75%";
 	} else {
 		return "50%";
 	}

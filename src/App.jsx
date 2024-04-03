@@ -1,14 +1,9 @@
-import MusicPlayback from "./assets/MusicPlayback/MusicPlayback";
-import Page from "./assets/Page/Page";
-import { PageWrapper } from "./assets/PageWrapper/PageWrapper";
+import Routes from "./routes/Routes";
 
 function App() {
 	return (
 		<>
-			<PageWrapper>
-				<Page />
-				<MusicPlayback />
-			</PageWrapper>
+			<Routes />
 		</>
 	);
 }
