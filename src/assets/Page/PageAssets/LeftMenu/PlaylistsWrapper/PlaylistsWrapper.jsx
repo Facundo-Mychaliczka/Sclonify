@@ -51,7 +51,7 @@ const PlaylistsWrapper = () => {
 					<>
 						<PlaylistItemImageContainer></PlaylistItemImageContainer>
 						<PlaylistItemDescriptionContainer>
-							<PlaylistItemName>IMAGINE DRAGONS</PlaylistItemName>
+							<PlaylistItemName>IMAGINE DRAGONS CON MUCHO TEXTO</PlaylistItemName>
 							<PlaylistItemDescription>Artista</PlaylistItemDescription>
 						</PlaylistItemDescriptionContainer>
 					</>
@@ -150,7 +150,7 @@ const PlaylistsWrapper = () => {
 					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
-			<PlaylistItem menuWidth={leftMenuWidth}>
+			<PlaylistItem menuWidth={leftMenuWidth} active={"true"}>
 				{leftMenuWidth !== "small" ? (
 					<>
 						<PlaylistItemImageContainer></PlaylistItemImageContainer>

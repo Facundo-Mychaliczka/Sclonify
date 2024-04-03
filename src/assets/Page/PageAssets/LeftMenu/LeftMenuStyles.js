@@ -16,5 +16,6 @@ export const LeftMenuContainer = styled.div`
 	background-color: black;
 	width: ${({ widthDisplay }) => displayFunction(widthDisplay)};
 	height: 100%;
-	padding: 15px 20px;
+	padding: 20px 20px;
+	padding-bottom: 0px;
 `;

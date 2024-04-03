@@ -3,7 +3,11 @@ import styled from "styled-components";
 export const IconsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
+	justify-content: space-evenly;
 	gap: 25px;
+	height: auto;
+	min-height: 30%;
+	margin-bottom: 20px;
 `;
 
 export const Icon = styled.a`

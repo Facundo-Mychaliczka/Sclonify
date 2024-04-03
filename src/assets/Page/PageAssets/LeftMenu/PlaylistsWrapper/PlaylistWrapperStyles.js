@@ -8,7 +8,8 @@ export const PlaylistsContainer = styled.div`
 	opacity: 1;
 	flex-direction: column;
 	margin-top: ${({ menuWidth }) => (menuWidth !== "small" ? "0px" : "20px")};
-	height: calc(80% - 110px);
+	/* height: calc(70% - 80px); */
+	height: ${({ menuWidth }) => (menuWidth !== "small" ? "calc(70% - 80px)" : "calc(70% - 30px)")};
 	gap: 10px;
 	overflow-y: scroll;
 	&::-webkit-scrollbar {
@@ -17,6 +18,10 @@ export const PlaylistsContainer = styled.div`
 	}
 	&::-webkit-scrollbar-thumb {
 		background: rgba(190, 191, 197, 0.3);
+	}
+	/* PARA QUE EN PANTALLAS GRANDES NO QUEDE MUCHO ESPACIO ENTRE EL FINAL DE LA LISTA DE PLAYLISTS Y EL MENÚ DE ABAJO  */
+	@media (min-height: 740px) {
+		height: ${({ menuWidth }) => (menuWidth !== "small" ? "calc(70% - 30px)" : "calc(70% - 30px)")};
 	}
 `;
 
@@ -87,15 +92,19 @@ export const PlaylistItemDescriptionContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: flex-start;
 	width: 75%;
 	padding: 10px;
 	gap: 5px;
 `;
 
 export const PlaylistItemName = styled.p`
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 	text-align: left;
 	width: 100%;
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: 800;
 `;
 
