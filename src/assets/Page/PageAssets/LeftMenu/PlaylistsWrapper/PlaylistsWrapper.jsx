@@ -3,7 +3,6 @@ import {
 	PlaylistItem,
 	PlaylistItemDescription,
 	PlaylistItemDescriptionContainer,
-	PlaylistItemImage,
 	PlaylistItemImageContainer,
 	PlaylistItemName,
 	PlaylistRecentBtn,
@@ -13,7 +12,6 @@ import {
 } from "./PlaylistWrapperStyles";
 import { StyledImageIcon } from "../IconsWrapper/IconsWrapperStyles";
 import { useSelector } from "react-redux";
-import PlaylistItemImg from "../../../../../../public/ImgProyectoPrueba.jpeg";
 
 const PlaylistsWrapper = () => {
 	const leftMenuWidth = useSelector((state) => state.leftMenu.leftMenu);
@@ -45,7 +43,7 @@ const PlaylistsWrapper = () => {
 						</PlaylistItemDescriptionContainer>
 					</>
 				) : (
-					<PlaylistItemImage src={PlaylistItemImg} />
+					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
 			<PlaylistItem menuWidth={leftMenuWidth}>
@@ -58,7 +56,7 @@ const PlaylistsWrapper = () => {
 						</PlaylistItemDescriptionContainer>
 					</>
 				) : (
-					<PlaylistItemImage src={PlaylistItemImg} />
+					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
 			<PlaylistItem menuWidth={leftMenuWidth}>
@@ -71,7 +69,7 @@ const PlaylistsWrapper = () => {
 						</PlaylistItemDescriptionContainer>
 					</>
 				) : (
-					<PlaylistItemImage src={PlaylistItemImg} />
+					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
 			<PlaylistItem menuWidth={leftMenuWidth}>
@@ -84,7 +82,7 @@ const PlaylistsWrapper = () => {
 						</PlaylistItemDescriptionContainer>
 					</>
 				) : (
-					<PlaylistItemImage src={PlaylistItemImg} />
+					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
 			<PlaylistItem menuWidth={leftMenuWidth}>
@@ -97,7 +95,7 @@ const PlaylistsWrapper = () => {
 						</PlaylistItemDescriptionContainer>
 					</>
 				) : (
-					<PlaylistItemImage src={PlaylistItemImg} />
+					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
 			<PlaylistItem menuWidth={leftMenuWidth}>
@@ -110,7 +108,7 @@ const PlaylistsWrapper = () => {
 						</PlaylistItemDescriptionContainer>
 					</>
 				) : (
-					<PlaylistItemImage src={PlaylistItemImg} />
+					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
 			<PlaylistItem menuWidth={leftMenuWidth}>
@@ -123,7 +121,7 @@ const PlaylistsWrapper = () => {
 						</PlaylistItemDescriptionContainer>
 					</>
 				) : (
-					<PlaylistItemImage src={PlaylistItemImg} />
+					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
 			<PlaylistItem menuWidth={leftMenuWidth}>
@@ -136,7 +134,7 @@ const PlaylistsWrapper = () => {
 						</PlaylistItemDescriptionContainer>
 					</>
 				) : (
-					<PlaylistItemImage src={PlaylistItemImg} />
+					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
 			<PlaylistItem menuWidth={leftMenuWidth}>
@@ -149,7 +147,7 @@ const PlaylistsWrapper = () => {
 						</PlaylistItemDescriptionContainer>
 					</>
 				) : (
-					<PlaylistItemImage src={PlaylistItemImg} />
+					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
 			<PlaylistItem menuWidth={leftMenuWidth}>
@@ -162,7 +160,7 @@ const PlaylistsWrapper = () => {
 						</PlaylistItemDescriptionContainer>
 					</>
 				) : (
-					<PlaylistItemImage src={PlaylistItemImg} />
+					<PlaylistItemImageContainer></PlaylistItemImageContainer>
 				)}
 			</PlaylistItem>
 		</PlaylistsContainer>

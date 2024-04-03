@@ -82,12 +82,6 @@ export const PlaylistItemImageContainer = styled.div`
 	overflow-y: hidden;
 `;
 
-export const PlaylistItemImage = styled.img`
-	height: 60px;
-	width: 60px;
-	border-radius: 4rem;
-`;
-
 export const PlaylistItemDescriptionContainer = styled.div`
 	height: 100%;
 	display: flex;
