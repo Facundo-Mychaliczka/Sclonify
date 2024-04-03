@@ -27,6 +27,14 @@ export const RecentPlayedCard = styled.div`
 		background-color: rgba(190, 191, 197, 0.5);
 		scale: 1.05;
 	}
+	&:hover .multimediaPauseBtn {
+		opacity: 1;
+		transform: translate(-35px, -30%);
+	}
+	&:hover .multimediaPlayBtn {
+		opacity: 1;
+		transform: translateY(0);
+	}
 `;
 
 export const RecentPlayedImage = styled.div`
@@ -64,8 +72,7 @@ export const MultimediaPauseRecentButton = styled.img`
 	transition: 0.25s;
 	transform: translate(-35px, 10%);
 	&:hover {
-		opacity: 1;
-		transform: translate(-35px, -10%);
+		scale: 1.1;
 	}
 `;
 
@@ -75,9 +82,8 @@ export const MultimediaPlayRecentButton = styled.img`
 	border-radius: 10rem;
 	opacity: 0;
 	transition: 0.25s;
-	transform: translateY(10%);
+	transform: translateY(30%);
 	&:hover {
-		opacity: 1;
-		transform: translateY(0);
+		scale: 1.1;
 	}
 `;

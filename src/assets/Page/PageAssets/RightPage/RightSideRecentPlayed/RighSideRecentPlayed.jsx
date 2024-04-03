@@ -16,7 +16,7 @@ import PauseBtnImage from "../../../../../../public/PauseButton.png";
 
 const RighSideRecentPlayed = () => {
 	const leftSideWidth = useSelector((state) => state.leftMenu.leftMenu);
-	const PlayingSong = "esta";
+	const PlayingSong = "est";
 	return (
 		<RecentPlayedWrapper leftMenuWidth={leftSideWidth}>
 			<RecentPlayedCard>
@@ -26,10 +26,10 @@ const RighSideRecentPlayed = () => {
 					{PlayingSong === "esta" ? (
 						<>
 							<PlayingSongGIF src={MusicGIF} alt="" />
-							<MultimediaPauseRecentButton src={PauseBtnImage} />
+							<MultimediaPauseRecentButton className="multimediaPauseBtn" src={PauseBtnImage} />
 						</>
 					) : (
-						<MultimediaPlayRecentButton src={PlayBtnImage} />
+						<MultimediaPlayRecentButton className="multimediaPlayBtn" src={PlayBtnImage} />
 					)}
 				</ButtonContainer>
 			</RecentPlayedCard>
@@ -40,10 +40,10 @@ const RighSideRecentPlayed = () => {
 					{PlayingSong === "esta" ? (
 						<>
 							<PlayingSongGIF src={MusicGIF} alt="" />
-							<MultimediaPauseRecentButton src={PauseBtnImage} />
+							<MultimediaPauseRecentButton className="multimediaPauseBtn" src={PauseBtnImage} />
 						</>
 					) : (
-						<MultimediaPlayRecentButton src={PlayBtnImage} />
+						<MultimediaPlayRecentButton className="multimediaPlayBtn" src={PlayBtnImage} />
 					)}
 				</ButtonContainer>
 			</RecentPlayedCard>
@@ -54,10 +54,10 @@ const RighSideRecentPlayed = () => {
 					{PlayingSong === "esta" ? (
 						<>
 							<PlayingSongGIF src={MusicGIF} alt="" />
-							<MultimediaPauseRecentButton src={PauseBtnImage} />
+							<MultimediaPauseRecentButton className="multimediaPauseBtn" src={PauseBtnImage} />
 						</>
 					) : (
-						<MultimediaPlayRecentButton src={PlayBtnImage} />
+						<MultimediaPlayRecentButton className="multimediaPlayBtn" src={PlayBtnImage} />
 					)}
 				</ButtonContainer>
 			</RecentPlayedCard>
@@ -68,10 +68,10 @@ const RighSideRecentPlayed = () => {
 					{PlayingSong === "esta" ? (
 						<>
 							<PlayingSongGIF src={MusicGIF} alt="" />
-							<MultimediaPauseRecentButton src={PauseBtnImage} />
+							<MultimediaPauseRecentButton className="multimediaPauseBtn" src={PauseBtnImage} />
 						</>
 					) : (
-						<MultimediaPlayRecentButton src={PlayBtnImage} />
+						<MultimediaPlayRecentButton className="multimediaPlayBtn" src={PlayBtnImage} />
 					)}
 				</ButtonContainer>
 			</RecentPlayedCard>
@@ -82,10 +82,10 @@ const RighSideRecentPlayed = () => {
 					{PlayingSong === "esta" ? (
 						<>
 							<PlayingSongGIF src={MusicGIF} alt="" />
-							<MultimediaPauseRecentButton src={PauseBtnImage} />
+							<MultimediaPauseRecentButton className="multimediaPauseBtn" src={PauseBtnImage} />
 						</>
 					) : (
-						<MultimediaPlayRecentButton src={PlayBtnImage} />
+						<MultimediaPlayRecentButton className="multimediaPlayBtn" src={PlayBtnImage} />
 					)}
 				</ButtonContainer>
 			</RecentPlayedCard>
@@ -96,10 +96,10 @@ const RighSideRecentPlayed = () => {
 					{PlayingSong === "esta" ? (
 						<>
 							<PlayingSongGIF src={MusicGIF} alt="" />
-							<MultimediaPauseRecentButton src={PauseBtnImage} />
+							<MultimediaPauseRecentButton className="multimediaPauseBtn" src={PauseBtnImage} />
 						</>
 					) : (
-						<MultimediaPlayRecentButton src={PlayBtnImage} />
+						<MultimediaPlayRecentButton className="multimediaPlayBtn" src={PlayBtnImage} />
 					)}
 				</ButtonContainer>
 			</RecentPlayedCard>
@@ -110,10 +110,10 @@ const RighSideRecentPlayed = () => {
 					{PlayingSong === "esta" ? (
 						<>
 							<PlayingSongGIF src={MusicGIF} alt="" />
-							<MultimediaPauseRecentButton src={PauseBtnImage} />
+							<MultimediaPauseRecentButton className="multimediaPauseBtn" src={PauseBtnImage} />
 						</>
 					) : (
-						<MultimediaPlayRecentButton src={PlayBtnImage} />
+						<MultimediaPlayRecentButton className="multimediaPlayBtn" src={PlayBtnImage} />
 					)}
 				</ButtonContainer>
 			</RecentPlayedCard>
@@ -124,10 +124,10 @@ const RighSideRecentPlayed = () => {
 					{PlayingSong === "esta" ? (
 						<>
 							<PlayingSongGIF src={MusicGIF} alt="" />
-							<MultimediaPauseRecentButton src={PauseBtnImage} />
+							<MultimediaPauseRecentButton className="multimediaPauseBtn" src={PauseBtnImage} />
 						</>
 					) : (
-						<MultimediaPlayRecentButton src={PlayBtnImage} />
+						<MultimediaPlayRecentButton className="multimediaPlayBtn" src={PlayBtnImage} />
 					)}
 				</ButtonContainer>
 			</RecentPlayedCard>
