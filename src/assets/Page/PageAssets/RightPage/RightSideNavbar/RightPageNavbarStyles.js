@@ -32,18 +32,19 @@ export const ArrowsContainer = styled.div`
 `;
 
 export const ArrowNavbar = styled.svg`
-	cursor: pointer;
-	fill: #bebfc5;
+	cursor: ${({ blocked }) => (blocked ? "not-allowed" : "pointer")};
+	fill: ${({ blocked }) => (blocked ? "gray" : "#bebfc5")};
+	${({ blocked }) => (blocked ? "" : "")}
 	width: 35px;
 	max-height: 70%;
-	background-color: grey;
+	background-color: rgba(0, 0, 0, 0.5);
 	padding: 10px 0px;
 	border-radius: 1rem;
 	margin: 15px 0px;
 	transition: 0.5s;
 	&:hover {
-		scale: 1.05;
-		fill: white;
+		scale: ${({ blocked }) => (blocked ? "" : "1.05")};
+		fill: ${({ blocked }) => (blocked ? "" : "white")};
 	}
 `;
 
