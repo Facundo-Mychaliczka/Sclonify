@@ -4,7 +4,7 @@ const displayFunction = (widthDisplay) => {
 	if (widthDisplay === "small") {
 		return "10%";
 	} else if (widthDisplay === "medium") {
-		return "25%";
+		return "20%";
 	} else {
 		return "50%";
 	}
@@ -16,6 +16,6 @@ export const LeftMenuContainer = styled.div`
 	background-color: black;
 	width: ${({ widthDisplay }) => displayFunction(widthDisplay)};
 	height: 100%;
-	padding: 20px 20px;
+	padding: 20px 10px;
 	padding-bottom: 0px;
 `;

@@ -59,7 +59,7 @@ const IconsWrapper = () => {
 							<path d="M86.4644,55.1143l-7.6072-3.9862L45.3921,68.6572a2.9984,2.9984,0,0,1-2.7861-.0009L9.1429,51.128,1.5356,55.1143a1,1,0,0,0,0,1.7714l42,22a.9985.9985,0,0,0,.9278,0l42-22a1,1,0,0,0,.0005-1.7714Z" />
 						</g>
 					</StyledImageLibrary>
-					<LibraryIconP>{widthLeftMenu === "small" ? "" : "Tu biblioteca"}</LibraryIconP>
+					<LibraryIconP>{widthLeftMenu === "small" ? "" : "Biblioteca"}</LibraryIconP>
 				</IconLibrary>
 				<LibraryRightIcons menuWidth={widthLeftMenu}>
 					{/* ÍCONO DE CREAR LISTA O CARPETA */}

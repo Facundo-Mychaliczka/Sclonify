@@ -7,9 +7,9 @@ export const PlaylistsContainer = styled.div`
 	background-color: transparent;
 	opacity: 1;
 	flex-direction: column;
-	margin-top: ${({ menuWidth }) => (menuWidth !== "small" ? "0px" : "20px")};
+	margin-top: ${({ menuWidth }) => (menuWidth !== "small" ? "10px" : "20px")};
 	/* height: calc(70% - 80px); */
-	height: ${({ menuWidth }) => (menuWidth !== "small" ? "calc(70% - 80px)" : "calc(70% - 30px)")};
+	height: ${({ menuWidth }) => (menuWidth !== "small" ? "calc(70% - 25px)" : "calc(70% - 30px)")};
 	gap: 10px;
 	overflow-y: scroll;
 	&::-webkit-scrollbar {
@@ -32,12 +32,16 @@ export const PlaylistsIconsContainer = styled.div`
 	justify-content: space-between;
 	height: 10%;
 	width: 100%;
+	padding: 5px;
 `;
 
 export const PlaylistRecentBtn = styled.div`
 	cursor: pointer;
+	gap: 15px;
 	display: flex;
 	color: #bebfc5;
+	font-size: 15px;
+	font-weight: 600;
 	transition: 0.25s;
 	&:hover {
 		color: white;
@@ -94,7 +98,7 @@ export const PlaylistItemDescriptionContainer = styled.div`
 	justify-content: center;
 	align-items: flex-start;
 	width: 75%;
-	padding: 10px;
+	padding: 5px 10px;
 	gap: 5px;
 `;
 

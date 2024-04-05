@@ -4,19 +4,21 @@ export const IconsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	gap: 25px;
+	gap: 20px;
 	height: auto;
 	min-height: 30%;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 `;
 
 export const Icon = styled.a`
 	background-color: transparent;
 	display: flex;
-	gap: 30px;
+	gap: 20px;
 	width: 100%;
 	cursor: pointer;
 	color: #bebfc5;
+	font-size: 20px;
+	font-weight: 800;
 	transition: 0.25s;
 	height: 30px;
 	&:hover {
@@ -26,11 +28,13 @@ export const Icon = styled.a`
 
 export const StyledImageIcon = styled.svg`
 	fill: currentColor;
+	height: 30px;
 `;
 
 export const StyledImageLibrary = styled.svg`
 	fill: ${({ menuWidth }) => (menuWidth === "small" ? "none" : "currentColor")};
-	min-width: 48px;
+	/* min-width: 20px; */
+	height: 35px;
 	stroke: #bebfc5;
 	transform: rotate(90deg);
 `;
@@ -40,22 +44,24 @@ export const IconText = styled.p``;
 export const LibraryIconsContainer = styled.div`
 	display: flex;
 	flex-direction: row;
-	height: 30px;
-	margin-top: 5px;
+	font-size: 20px;
+	/* height: 25px; */
+	/* margin-top: 5px; */
 	width: 100%;
-	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
 `;
 
 export const IconLibrary = styled.div`
 	display: flex;
+	align-items: center;
 	flex-direction: row;
 	background-color: transparent;
-	gap: 30px;
+	gap: 20px;
 	width: 90%;
 	cursor: pointer;
 	color: #bebfc5;
 	transition: 0.25s;
-	height: 30px;
 	transition: 0.25s;
 	&:hover {
 		color: white;
@@ -63,7 +69,8 @@ export const IconLibrary = styled.div`
 `;
 
 export const LibraryIconP = styled.p`
-	width: 90%;
+	width: 70%;
+	font-weight: 800;
 	transition: 0.25s;
 	text-align: left;
 	&:hover {
@@ -74,7 +81,7 @@ export const LibraryRightIcons = styled.div`
 	display: ${({ menuWidth }) => (menuWidth === "small" ? "none" : "flex")};
 	flex-direction: row;
 	height: 100%;
-	gap: 10px;
+	gap: 5px;
 `;
 
 export const StyledImageLibraryIcon = styled(StyledImageIcon)`
@@ -99,9 +106,10 @@ export const CarrouselFilter = styled.div`
 	color: #bebfc5;
 	align-items: center;
 	justify-content: ${({ menuWidth }) => (menuWidth === "large" ? "left" : "")};
-	gap: 10px;
+	gap: 5px;
 	width: 100%;
-	margin: 10px;
+	/* margin: 10px; */
+	padding: 5px;
 	transition: 0.5s;
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -116,6 +124,7 @@ export const CarrouselItem = styled.p`
 	border-radius: 1rem;
 	transition: 0.25s;
 	width: auto;
+	font-size: 15px;
 	&:hover {
 		color: white;
 		background-color: grey;
