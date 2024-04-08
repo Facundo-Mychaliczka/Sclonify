@@ -21,6 +21,7 @@ export const Icon = styled.a`
 	font-weight: 800;
 	transition: 0.25s;
 	height: 30px;
+	justify-content: ${({ menuWidth }) => (menuWidth === "small" ? "center" : "")};
 	&:hover {
 		color: white;
 	}
@@ -58,17 +59,19 @@ export const IconLibrary = styled.div`
 	flex-direction: row;
 	background-color: transparent;
 	gap: 20px;
-	width: 90%;
+	width: 100%;
 	cursor: pointer;
 	color: #bebfc5;
 	transition: 0.25s;
 	transition: 0.25s;
+	justify-content: ${({ menuWidth }) => (menuWidth === "small" ? "center" : "")};
 	&:hover {
 		color: white;
 	}
 `;
 
 export const LibraryIconP = styled.p`
+	display: ${({ menuWidth }) => (menuWidth === "small" ? "none" : "flex")};
 	width: 70%;
 	font-weight: 800;
 	transition: 0.25s;
