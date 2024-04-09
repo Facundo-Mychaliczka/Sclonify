@@ -11,7 +11,7 @@ const Routes = () => {
 				<Layout>
 					<ReactDomRoutes>
 						<Route path="/" element={<Home />} />
-						<Route path="ejemplo" element={<Ejemplo />} />
+						<Route path="/ejemplo" element={<Ejemplo />} />
 					</ReactDomRoutes>
 				</Layout>
 			</BrowserRouter>
