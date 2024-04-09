@@ -95,7 +95,7 @@ export const PlaylistItemDescriptionContainer = styled.div`
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: left;
 	align-items: flex-start;
 	width: 75%;
 	padding: 5px 10px;
